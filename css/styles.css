@@ -1,0 +1,65 @@
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace !important;
+    background: url('../img/bg.jpg');
+}
+
+.play {
+    margin-left: 2rem;
+    color: white;
+}
+
+header {
+    margin-bottom: 1rem;
+}
+
+.container {
+    color: white !important;
+}
+
+h4 {
+    color: white !important;
+}
+
+p {
+    color: red !important;
+}
+
+span.user {
+    color: red !important;
+}
+
+h6 {
+    color: white !important;
+}
+
+#carouselExampleIndicators {
+    width: 100%;
+    height: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+    outline: #007bff 1px solid;
+}
+
+.playButton {
+    display: block;
+    margin-left: 600px;
+}
+
+.submitButton {
+    color: teal !important;
+}
+
+.copyright {
+    color: #6D6D6D;
+    background: black;
+    padding: 20px 0px;
+    padding-bottom: 20px;
+    bottom: 0px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    max-height: 50px;
+}

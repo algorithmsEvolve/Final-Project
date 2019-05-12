@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf - 8">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/game.css">
+    <title>2d breakout</title>
+</head>
+
+<body>
+    <header id="navHead" class="header">
+
+    </header>
+    <canvas id="myCanvas" width="480" height="320"></canvas>
+
+    <!-- win modal -->
+    <div class="modal fade" id="winModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title winModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="https://formspree.io/akbar.riski@hotmail.com">
+                        <div class="form-group">
+                            <p>Please sent me your opinion about this project. Thanks!:)</p>
+                            <label for="recipient-name" class="col-form-label">Username:</label>
+                            <input type="text" class="form-control userNameInput" id="recipient-name" name="Username"
+                                readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea name="Message" class="form-control" id="message-text"></textarea>
+                        </div>
+                        <input type="hidden" value="WIN" name="Status in-game">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary closeButton" data-dismiss="modal">Back to Home</button>
+                    <button type="submit" class="btn btn-primary sendButton">Send message</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- lose modal -->
+    <div class="modal fade" id="loseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title loseModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="https://formspree.io/akbar.riski@hotmail.com">
+                        <div class="form-group">
+                            <p>Please sent me your opinion about this project. Thanks!:)</p>
+                            <label for="recipient-name" class="col-form-label">Username:</label>
+                            <input type="text" class="form-control userNameInput" id="recipient-name" name="Username"
+                                readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea name="Message" class="form-control" id="message-text"></textarea>
+                        </div>
+                        <input type="hidden" value="LOSE" name="Status in-game">
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary sendButton">Send message</button>
+                    <button type="button" class="btn btn-success againButton" data-dismiss="modal">Try Again</button>
+                    <button type="button" class="btn btn-secondary closeButton" data-dismiss="modal">Back to Home</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jscript.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="js/game.js"></script>
+
+
+</body>
+
+</html>

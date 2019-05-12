@@ -1,0 +1,11 @@
+canvas{
+	background: transparent;
+    display: block;
+    outline: #007bff 3px solid;
+	margin: 0 auto;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
